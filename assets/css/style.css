@@ -583,7 +583,6 @@ header h1 {
     linear-gradient(90deg, hsl(38, 64%, 92%), hsl(38, 64%, 92%));
   background-size: 100% 111px;
   height: 12vh;
-  /* background-repeat: no-repeat; */
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -595,6 +594,14 @@ header h1 {
   box-shadow:
     10px -4px 8px 0 rgba(0, 0, 0, 0.2),
     0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+@media only screen and (max-width: 731px) {
+  .footer {
+    height: 22vh;
+    display: grid;
+    justify-content: space-around;
+  }
 }
 
 @media only screen and (max-width: 440px) {
@@ -1019,20 +1026,6 @@ body {
 #txt-color1 {
   color: white;
   font-weight: 600;
-}
-
-@media only screen and (max-width: 731px) {
-  .footer {
-    /* background-image: linear-gradient(135deg, #0093E9 0%, #80D0C7 100%); */
-    height: 22vh;
-    display: grid;
-    justify-content: space-around;
-    align-items: center;
-    margin-top: -28%;
-    width: 100%;
-    background-color: var(--blue-shade-1);
-    text-align: center;
-  }
 }
 
 /* Style for fa-heart */
